@@ -1,0 +1,48 @@
+* {
+  background-color: darkolivegreen;
+  margin: 0;
+}
+
+header {
+  background-color: grey;
+}
+header span {
+  background-color: grey;
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+}
+
+#formdiv {
+  display: none;
+}
+
+form {
+  border: 1px solid black;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#bookDiv {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#bookDiv div {
+  width: 150px;
+  height: 200px;
+  outline: auto;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
