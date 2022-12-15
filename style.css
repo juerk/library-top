@@ -3,7 +3,63 @@
   margin: 0;
 }
 
-header {
+
+.bookDiv {
+  border: 1px solid red;
+  width: 200px;
+  height: 100px;
+}
+
+button {
+  width: 100px;
+  height: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* header {
   background-color: grey;
 }
 header span {
@@ -45,4 +101,4 @@ form {
   flex-direction: column;
   align-items: center;
   gap: 30px;
-}
+} */
