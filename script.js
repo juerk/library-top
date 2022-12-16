@@ -1,16 +1,24 @@
 let myLibrary = [];
-let book = "book";
 
-// function Book(title, author, pages) {
-//   this.title = title
-//   this.author = author
-//   this.pages = pages
-// }
+let titleValue = document.getElementById('title').value
+let authorValue = document.getElementById('author')
+let pagesValue = document.getElementById('pages')
 
-// const newBook = new Book(title, author, pages) 
+function Book(title, author, pages) {
+  this.title = form.title.value
+  this.author = form.author.value
+  this.pages = form.pages.value
+}
+
+const addBookButton = document.getElementById('addBookButton')
+addBookButton.addEventListener('click', function(){
+  addBookToLibrary()
+})
 
 function addBookToLibrary() {
-  myLibrary.push(book)
+  event.preventDefault()
+  const newBook = new Book(title, author, pages) 
+  myLibrary.push(newBook)
   render()
 }
 
@@ -32,10 +40,11 @@ function createBook(item) {
   bookDiv.classList.add('bookDiv')
   bookDiv.setAttribute('id', myLibrary.indexOf(item))
 
+  mainDiv.appendChild(bookDiv)
+
   removeButton.setAttribute('id', 'removeBtn')
   removeButton.innerText = "Remove"
   bookDiv.appendChild(removeButton)
-  mainDiv.appendChild(bookDiv)
 
   removeButton.addEventListener('click', () => {
     myLibrary.splice(myLibrary.indexOf(item), 1);
@@ -43,6 +52,22 @@ function createBook(item) {
   })
   console.log(myLibrary)
 }
+
+function toggleBookForm() {
+  let bookForm = document.getElementById('form')
+  if (bookForm.style.display === 'none'){
+    bookForm.style.display = 'block'
+  } else {
+    bookForm.style.display = 'none'
+  }
+}
+
+
+
+
+// Add Book button should pop up a form for client to fill in values for title, author, pages, has read
+// Add DOM elements to display book info on book cards
+// add button that toggles read/not read
 
 
 
